@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="Description" content="ВебБустер тестовое задание">
+<title>ВебБустер тестовое</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="cards">
+        <div class="card">
+            <img class="card-image" src="img-1.png"></img>
+            <p class="card-text">Парикмахерское кресло «Норм» гидравлическое</p>
+            <p class="card-price">9 900 &#8381</p>
+            <button class="card-button" onclick="openForm()">Купить</button>
+        </div>
+    
+        <div class="card">
+            <img class="card-image" src="img-1.png"></img>
+            <p class="card-text">Парикмахерское кресло «Норм» гидравлическое</p>
+            <p class="card-price">9 900 &#8381</p>
+            <button class="card-button" onclick="openForm()">Купить</button>
+        </div>
+    
+        <div class="card">
+            <img class="card-image" src="img-1.png"></img>
+            <p class="card-text">Парикмахерское кресло «Норм» гидравлическое</p>
+            <p class="card-price">9 900 &#8381</p>
+            <button class="card-button" onclick="openForm()">Купить</button>
+        </div>
+    
+        <div class="card">
+            <img class="card-image" src="img-1.png"></img>
+            <p class="card-text">Парикмахерское кресло «Норм» гидравлическое</p>
+            <p class="card-price">9 900 &#8381</p>
+            <button class="card-button" onclick="openForm()">Купить</button>
+        </div>
+    </section>
+
+    <div class="form-body" id="productForm">
+    <form class="product-form" action="send.php" method="post"> 
+            <ul>
+                <li class="forms-elements">
+                <input type="text" class="name" placeholder="Имя" name="name" required></input></li>
+                
+                <li class="forms-elements">
+                <input type="phone" class="number" name="phone" placeholder="Телефон" minlength="6" maxlength="15" required></input></li>
+
+                <li class="forms-elements">
+                <input type="email" class="email" name="email" placeholder="E-mail" required></input></li>
+
+                <li class="forms-elements" name="product">Парикмахерское кресло «Норм» гидравлическое</li>
+            </ul>
+            <button class="submit-btn" type="submit">Отправить</button>
+            <button class="close-btn" onclick="closeForm()">Закрыть</button>
+    </form>
+    </div>
+
+    
+
+    <section class="cards cards2">
+        <h1>Тут выводится решение задания 3.</h1>
+        <div class="products"></div>
+    </section>
+        
+    
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+</body>
