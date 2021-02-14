@@ -43,12 +43,15 @@
 .form-body{
     width: 50%;
     height: auto;
-    background: #f13c6e;
-    color: #fff;
+    background-color: #ffccda;
+    color: #ffffff;
     padding: 33px 39px;
     position: absolute;
     display: none;
-    z-index: 5;
+    z-index: 6;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     border-radius: 15px;
 }
 .forms-elements{
@@ -56,16 +59,25 @@
     margin-left: 0;
     margin-bottom: 30px;
 }
-.product-form input{
-    background: #f13c6f2a;
-    color: #000000;
+input{
+    background-color: #f13c6e;
+    color: #ffffff;
     border: none;
     padding: 15px 25px;
     border-radius: 50px;
 }
+::placeholder{
+    color: #ffffff;
+
+}
 .submit-btn, .close-btn{
     width: 100px;
     height: 40px;
+    background-color: #f13c6e;
+    color: #ffffff;
+    border-radius: 15px;
+    border: none;
+    outline: none;
 }
 .cards2{
     margin-top: 5em;
@@ -78,5 +90,10 @@
     }
     .card{
         width: 85%;
+    }
+    .form-body{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
